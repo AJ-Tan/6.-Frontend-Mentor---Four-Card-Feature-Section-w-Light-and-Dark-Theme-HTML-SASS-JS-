@@ -33,6 +33,8 @@ $colorList: "cyan", "red", "orange", "blue";
    max-width: 21rem;
    padding: var(--spacing-lg-1) var(--spacing-lg-1) var(--spacing-lg-2);
 
+   background-color: var(--color-surface);
+
    overflow: hidden;
 
    &__description {
