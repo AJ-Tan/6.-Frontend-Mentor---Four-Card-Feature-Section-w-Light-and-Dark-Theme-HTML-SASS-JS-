@@ -7,7 +7,9 @@ $colorList: "cyan", "red", "orange", "blue";
    justify-content: center;
    align-items: center;
    align-content: center;
-   gap: var(--spacing-md-2);
+   gap: var(--spacing-lg-1);
+
+   max-width: 70rem;
 
    margin-top: var(--spacing-lg-1);
 
@@ -28,8 +30,8 @@ $colorList: "cyan", "red", "orange", "blue";
    border-radius: 0.5rem;
    box-shadow: 0 4px 20px var(--color-shadow);
 
-   max-width: 20rem;
-   padding: var(--spacing-lg-1);
+   max-width: 21rem;
+   padding: var(--spacing-lg-1) var(--spacing-lg-1) var(--spacing-lg-2);
 
    overflow: hidden;
 
