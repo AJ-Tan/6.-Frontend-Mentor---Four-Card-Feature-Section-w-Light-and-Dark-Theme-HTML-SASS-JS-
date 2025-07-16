@@ -13,6 +13,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
    -  [What I learned](#what-i-learned)
    -  [Useful resources](#useful-resources)
 -  [Author](#author)
+-  [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -43,7 +44,7 @@ Users should be able to:
 -  Semantic HTML5 markup
 -  CSS custom properties
 -  CSS (SASS/SCSS)
--  Flexbox
+-  CSS Grid
 -  Mobile-first workflow
 -  Javascript
 
@@ -148,3 +149,8 @@ themeButton.addEventListener("click", () => {
 
 -  GitHub - [AJ-Tan](https://github.com/AJ-Tan)
 -  Frontend Mentor - [@AJ-Tan](https://www.frontendmentor.io/profile/AJ-Tan)
+
+## Acknowledgments
+
+Frontend Mentor:
+[@mustafasen97](https://www.frontendmentor.io/profile/mustafasen97) - Helped me with the grid solution!

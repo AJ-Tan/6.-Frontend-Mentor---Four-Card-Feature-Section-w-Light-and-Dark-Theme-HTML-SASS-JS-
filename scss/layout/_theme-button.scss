@@ -16,6 +16,7 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
+      z-index: 2;
 
       margin-left: 2px;
       border-radius: 100%;
@@ -23,7 +24,6 @@
       width: 23px;
 
       background-color: black;
-      z-index: 2;
    }
 
    &[data-theme="dark"] &__toggle-knob {
