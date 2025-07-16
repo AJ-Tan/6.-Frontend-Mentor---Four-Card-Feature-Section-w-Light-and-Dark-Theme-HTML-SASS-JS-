@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 -  Solution URL: [GitHub Repository)](https://github.com/AJ-Tan/6.-Frontend-Mentor---Four-Card-Feature-Section-w-Light-and-Dark-Theme-HTML-SASS-JS-.git)
--  Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-  Live Site URL: [GitHub Pages](https://aj-tan.github.io/6.-Frontend-Mentor---Four-Card-Feature-Section-w-Light-and-Dark-Theme-HTML-SASS-JS-/)
 
 ## My process
 
