@@ -1,0 +1,28 @@
+@use "../util/" as u;
+
+main {
+   padding: var(--spacing-lg-1);
+}
+
+.header {
+   display: grid;
+   gap: var(--spacing-md-1);
+   padding-block: var(--spacing-lg-1);
+
+   @include u.breakpoint("tablet") {
+      padding-top: 0;
+   }
+}
+
+.header,
+.card-section {
+   margin-inline: auto;
+}
+
+.header {
+   max-width: 34rem;
+}
+
+.card-section {
+   max-width: 65rem;
+}

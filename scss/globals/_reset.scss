@@ -1,0 +1,44 @@
+@use "../util/" as u;
+
+/* Reset some default browser styles */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   //Trying the converting number to rem function
+   font-size: u.rem(15);
+}
+
+/* Set core body defaults */
+body {
+   min-height: 100vh;
+   background-color: var(--color-bg);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+   text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+   max-width: 100%;
+   display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+a,
+input,
+button,
+textarea,
+select,
+::before,
+::after {
+   font: inherit;
+}

@@ -1,0 +1,69 @@
+@use "../util/" as u;
+$colorList: "cyan", "red", "orange", "blue";
+
+.card-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   gap: var(--spacing-md-2);
+
+   margin-top: var(--spacing-lg-1);
+
+   @include u.breakpoint("tablet") {
+      flex-wrap: wrap;
+      max-height: 40em;
+   }
+
+   @include u.breakpoint("desktop") {
+      & article:first-child {
+         margin-block: var(--spacing-xl);
+      }
+   }
+}
+
+.card {
+   position: relative;
+   border-radius: 0.5rem;
+   box-shadow: 0 4px 20px var(--color-shadow);
+
+   max-width: 20rem;
+   padding: var(--spacing-lg-1);
+
+   overflow: hidden;
+
+   &__description {
+      margin-top: var(--spacing-sm);
+      margin-bottom: var(--spacing-lg-1);
+   }
+
+   &__image {
+      float: right;
+   }
+
+   &--cyan,
+   &--red,
+   &--orange,
+   &--blue {
+      @extend .card;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+      }
+   }
+
+   @each $color in $colorList {
+      &--#{$color} {
+         @extend .card;
+
+         &::before {
+            border-top: 0.3rem solid var(--#{$color});
+         }
+      }
+   }
+}

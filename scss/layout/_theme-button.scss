@@ -1,0 +1,51 @@
+//I'm using px, for now I dont want the size of this button to scale.
+.theme-button {
+   box-sizing: content-box;
+
+   height: 20px;
+   width: 45px;
+   border: 1px solid grey;
+   border-radius: 2rem;
+   padding: 3px;
+
+   position: relative;
+
+   &__toggle-knob {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      margin-left: 2px;
+      border-radius: 100%;
+      height: 23px;
+      width: 23px;
+
+      background-color: black;
+      z-index: 2;
+   }
+
+   &[data-theme="dark"] &__toggle-knob {
+      margin-left: 27px;
+      background-color: white;
+   }
+
+   & > img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 20px;
+
+      user-select: none;
+      transform: translateY(-50%);
+   }
+
+   &__light {
+      margin-left: 29px;
+   }
+
+   &__dark {
+      margin-left: 3px;
+   }
+}

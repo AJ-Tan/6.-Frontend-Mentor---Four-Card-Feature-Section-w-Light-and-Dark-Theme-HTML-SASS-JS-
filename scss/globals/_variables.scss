@@ -1,0 +1,26 @@
+:root {
+   --red: hsl(0, 78%, 62%);
+   --cyan: hsl(180, 62%, 55%);
+   --orange: hsl(34, 97%, 64%);
+   --blue: hsl(212, 86%, 64%);
+
+   --color-bg: hsl(0, 0%, 100%);
+   --color-shadow: rgba(0, 0, 0, 0.1);
+   --color-text-1: hsl(234, 12%, 34%);
+   --color-text-2: hsl(212, 6%, 44%);
+
+   --spacing-xs: 0.5rem;
+   --spacing-sm: 0.75rem;
+   --spacing-md-1: 1rem;
+   --spacing-md-2: 1.5rem;
+   --spacing-lg-1: 2rem;
+   --spacing-lg-2: 2.5rem;
+   --spacing-xl: 4rem;
+}
+
+[data-theme="dark"] {
+   --color-bg: hsl(234, 12%, 10%);
+   --color-text-1: hsl(0, 0%, 90%);
+   --color-text-2: hsl(0, 0%, 70%);
+   --color-shadow: rgba(0, 0, 0, 0.5);
+}
